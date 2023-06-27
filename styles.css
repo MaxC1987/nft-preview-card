@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap);
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, main, .price-time, .author, .price, .time {
+  display: flex;
+}
+
+body {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: Outfit, sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  color: white;
+}
+
+main {
+  width: 300px;
+  height: 550px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-evenly;
+  border-radius: 15px;
+  background-color: hsl(216, 50%, 16%);
+  box-shadow: 0 25px 30px hsl(217, 60%, 7%);
+}
+
+.img, .title, .text, .price-time, .author {
+  width: 85%;
+}
+
+.img {
+  height: 250px;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: hsl(178, 100%, 50%);
+}
+
+.nft {
+  width: 100%;
+}
+
+.link-img {
+  top: 0;
+  width: 100%;
+  background-image: url(images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nft:hover {
+  opacity: 0.5;
+}
+
+.title {
+  font-size: 1.2rem;
+}
+
+.price-time, .author {
+  align-items: center;
+}
+
+.price-time {
+  justify-content: space-between;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.price {
+  color: hsl(178, 100%, 50%);
+}
+
+.author {
+  height: 70px;
+  border-top: 2px solid hsla(215, 52%, 70%, 0.2);
+}
+
+.avatar {
+  width: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.soft-blue {
+  color: hsl(215, 51%, 70%);
+  opacity: 0.7;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover:after {
+  cursor: pointer;
+}
+
+a:visited {
+  color: white;
+}
+
+a:active {
+  color: hsl(178, 100%, 50%);
+}
+
